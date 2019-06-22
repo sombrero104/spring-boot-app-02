@@ -1,0 +1,281 @@
+{
+  "groups": [
+    {
+      "name": "server",
+      "type": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceType": "sombrero.Application",
+      "sourceMethod": "serverProperties()"
+    },
+    {
+      "name": "server.compression",
+      "type": "org.springframework.boot.web.server.Compression",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceMethod": "getCompression()"
+    },
+    {
+      "name": "server.error",
+      "type": "org.springframework.boot.autoconfigure.web.ErrorProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceMethod": "getError()"
+    },
+    {
+      "name": "server.error.whitelabel",
+      "type": "org.springframework.boot.autoconfigure.web.ErrorProperties$Whitelabel",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ErrorProperties",
+      "sourceMethod": "getWhitelabel()"
+    },
+    {
+      "name": "server.http2",
+      "type": "org.springframework.boot.web.server.Http2",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceMethod": "getHttp2()"
+    },
+    {
+      "name": "server.jetty",
+      "type": "org.springframework.boot.autoconfigure.web.ServerProperties$Jetty",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceMethod": "getJetty()"
+    },
+    {
+      "name": "server.servlet",
+      "type": "org.springframework.boot.autoconfigure.web.ServerProperties$Servlet",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceMethod": "getServlet()"
+    },
+    {
+      "name": "server.servlet.session.cookie",
+      "type": "org.springframework.boot.web.servlet.server.Session$Cookie",
+      "sourceType": "org.springframework.boot.web.servlet.server.Session",
+      "sourceMethod": "getCookie()"
+    },
+    {
+      "name": "server.ssl",
+      "type": "org.springframework.boot.web.server.Ssl",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceMethod": "getSsl()"
+    },
+    {
+      "name": "server.tomcat",
+      "type": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceMethod": "getTomcat()"
+    },
+    {
+      "name": "server.undertow",
+      "type": "org.springframework.boot.autoconfigure.web.ServerProperties$Undertow",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceMethod": "getUndertow()"
+    },
+    {
+      "name": "sombrero",
+      "type": "sombrero.SombreroProperties",
+      "sourceType": "sombrero.SombreroProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "server.address",
+      "type": "java.net.InetAddress",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties"
+    },
+    {
+      "name": "server.compression.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.web.server.Compression"
+    },
+    {
+      "name": "server.compression.excluded-user-agents",
+      "type": "java.lang.String[]",
+      "sourceType": "org.springframework.boot.web.server.Compression"
+    },
+    {
+      "name": "server.compression.mime-types",
+      "type": "java.lang.String[]",
+      "sourceType": "org.springframework.boot.web.server.Compression"
+    },
+    {
+      "name": "server.compression.min-response-size",
+      "type": "org.springframework.util.unit.DataSize",
+      "sourceType": "org.springframework.boot.web.server.Compression"
+    },
+    {
+      "name": "server.connection-timeout",
+      "type": "java.time.Duration",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties"
+    },
+    {
+      "name": "server.error.include-exception",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ErrorProperties"
+    },
+    {
+      "name": "server.error.include-stacktrace",
+      "type": "org.springframework.boot.autoconfigure.web.ErrorProperties$IncludeStacktrace",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ErrorProperties"
+    },
+    {
+      "name": "server.error.path",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ErrorProperties"
+    },
+    {
+      "name": "server.http2.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.web.server.Http2"
+    },
+    {
+      "name": "server.max-http-header-size",
+      "type": "org.springframework.util.unit.DataSize",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties"
+    },
+    {
+      "name": "server.port",
+      "type": "java.lang.Integer",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties"
+    },
+    {
+      "name": "server.server-header",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties"
+    },
+    {
+      "name": "server.servlet.jsp.class-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.web.servlet.server.Jsp"
+    },
+    {
+      "name": "server.servlet.jsp.init-parameters",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "org.springframework.boot.web.servlet.server.Jsp"
+    },
+    {
+      "name": "server.servlet.jsp.registered",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.web.servlet.server.Jsp"
+    },
+    {
+      "name": "server.servlet.session.persistent",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.web.servlet.server.Session"
+    },
+    {
+      "name": "server.servlet.session.store-dir",
+      "type": "java.io.File",
+      "sourceType": "org.springframework.boot.web.servlet.server.Session"
+    },
+    {
+      "name": "server.servlet.session.timeout",
+      "type": "java.time.Duration",
+      "sourceType": "org.springframework.boot.web.servlet.server.Session"
+    },
+    {
+      "name": "server.servlet.session.tracking-modes",
+      "type": "java.util.Set<org.springframework.boot.web.servlet.server.Session$SessionTrackingMode>",
+      "sourceType": "org.springframework.boot.web.servlet.server.Session"
+    },
+    {
+      "name": "server.ssl.ciphers",
+      "type": "java.lang.String[]",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.client-auth",
+      "type": "org.springframework.boot.web.server.Ssl$ClientAuth",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.enabled-protocols",
+      "type": "java.lang.String[]",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.key-alias",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.key-password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.key-store",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.key-store-password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.key-store-provider",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.key-store-type",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.protocol",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.trust-store",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.trust-store-password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.trust-store-provider",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.ssl.trust-store-type",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.web.server.Ssl"
+    },
+    {
+      "name": "server.use-forward-headers",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties"
+    },
+    {
+      "name": "sombrero.age",
+      "type": "java.lang.Integer",
+      "sourceType": "sombrero.SombreroProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "sombrero.full-name",
+      "type": "java.lang.String",
+      "sourceType": "sombrero.SombreroProperties"
+    },
+    {
+      "name": "sombrero.name",
+      "type": "java.lang.String",
+      "sourceType": "sombrero.SombreroProperties"
+    },
+    {
+      "name": "sombrero.session-timeout",
+      "type": "java.time.Duration",
+      "description": "이 값을 초로 받겠다. 안들어오면 30초. @DurationUnit(ChronoUnit.SECONDS) 설정 없이 프로퍼티즈 파일에서 값 뒤에 s를 붙이면 자동으로 듀레이션해줌.",
+      "sourceType": "sombrero.SombreroProperties",
+      "defaultValue": "30s"
+    }
+  ],
+  "hints": []
+}

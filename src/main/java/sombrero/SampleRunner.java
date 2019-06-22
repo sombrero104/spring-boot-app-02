@@ -1,5 +1,6 @@
 package sombrero;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -8,17 +9,27 @@ import org.springframework.stereotype.Component;
 @Component
 public class SampleRunner implements ApplicationRunner {
 
-    @Value("${sombrero.name}")
+    /*@Value("${sombrero.name}")
     private String name;
 
     @Value("${sombrero.age}")
-    private int age;
+    private int age;*/
+
+    @Autowired
+    SombreroProperties sombreroProperties;
+
+    /**
+     * 위에서 사용한 @Value 방식보다는 type safe 함. (오타를 방지할 수 있음.)
+     */
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("========================");
-        System.out.println("# name: " + name);
-        System.out.println("# age: " + age);
+        /*System.out.println("# name: " + name);
+        System.out.println("# age: " + age);*/
+        System.out.println("# name: " + sombreroProperties.getName());
+        System.out.println("# age: " + sombreroProperties.getAge());
+        System.out.println("# age: " + sombreroProperties.getSessionTimeout());
         System.out.println("========================");
         /**
          * 결과는..
